@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Nested Table</h1>
+    <table border="2">
+        <!-- row 1 -->
+        <tr>
+            <th>header column 1</th>
+            <th>header column 2</th>
+            <th>header column 3</th>
+            <th>header column 4</th>
+        </tr>
+        <!-- row 2 -->
+        <tr>
+            <td>Row 2-item 1</td>
+            <td>Row 2-item 2</td>
+            <th rowspan="2">Row 2-Nested Table 1 <table border="2">
+                <tr>
+                    <th>Row 1 header</th>
+                    <td>Item</td>
+                </tr>
+                <tr>
+                    <th>Row 2 header</th>
+                    <td>Item</td>
+                </tr>
+                <tr>
+                    <th>Row 3 header</th>
+                    <td>Item</td>
+                </tr>
+            </table></td></th>
+            <td>Row 2-item 4 <br> A second Line</td>
+        </tr>
+        <!-- row 3 -->
+        <tr>
+            <th>Row 3: Nested Table 2 <table border="2">
+                <tr>
+                    <th>Row 1 header</th>
+                    <td>Item</td>
+                </tr>
+                <tr>
+                    <th>Row 1 header</th>
+                    <td>Item</td>
+                </tr>
+            </table></th>
+            
+            <td>Row 3-Item 2</td>
+            
+            <td rowspan="2">Row 3-Item 3</td>
+        </tr>
+        <!-- row 4 -->
+        <tr>
+            
+                
+            <td>Row 4-Item 1</td>
+            <td>Row 4 Item 2</td>
+            <td>Row 4 Item 3</td>
+            
+        </tr>
+        <!-- row 5 -->
+        <tr>
+            <td colspan="4">Row 5- Last row of outer Table</td>
+            
+        </tr>
+    </table>
+    <a href="./index.html">Go Back</a>
+</body>
+</html>
